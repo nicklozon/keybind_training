@@ -1,0 +1,118 @@
+// Colors
+@grey: #eeeeee;
+@dark_grey: #d0d0d0;
+@charcoal: #555555;
+
+
+// Generic padding
+@padding_normal: 5px;
+
+
+// Elements
+body {
+    overflow: hidden;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+
+// ID elements
+#div_benchmark {
+    background-color: @grey;
+    padding: @padding_normal;
+    width: 200px;
+    position: fixed;
+    right: @padding_normal;
+    font-weight: bold;
+}
+
+#div_capture {
+    background-color: @grey;
+    width: 180px;
+    padding: @padding_normal;
+}
+
+#stats {
+    margin: 0px auto;
+    width: 100%;
+    -webkit-columns: 90px 2;
+    -moz-columns: 90px 2;
+    columns: 90px 2;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+}
+
+#config {
+    background-color: @dark_grey;
+    padding: @padding_normal;
+}
+
+#export_txt {
+    width: 380px;
+    height: 200px;
+}
+
+@content_height: 120px;
+#content {
+    width: 100%;
+    height: @content_height;
+    margin-top: @content_height/2*-1; // Move up half height
+    top: 50%;
+    position: absolute;
+    font-weight: bold;
+    z-index: -1; // Don't overlap visible elements
+    font-size: 100px;
+    text-align: center;
+    color: @charcoal;
+}
+
+#key_name {
+    width: 800px;
+    height: 0px; // This forces the element to not affect other inlien elements
+                 //  This allows for text fading effects to overlap
+    margin: 0px auto;
+    color: white;
+    position: relative;
+    display: none; // Initial key_name element is hidden - it is cloned by jquery
+}
+
+#div_config {
+    background-color: @grey;
+    padding: @padding_normal;
+    width: 390px;
+    bottom: @padding_normal;
+    position: fixed;
+}
+
+#div_history {
+    background-color: @grey;
+    padding: @padding_normal;
+    width: 300px;
+    right: @padding_normal;
+    bottom: @padding_normal;
+    position: fixed;
+    text-align: right;
+}
+
+#benchmark_txt {
+    width: 300px;
+    height: 200px;
+}
+
+
+// Classes
+.input_button {
+    width: 80%;
+    display: block;
+    margin: 5px auto;
+}
+
+.input_number {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.stat_text {
+    font-weight: normal;
+    text-align: right;
+}

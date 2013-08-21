@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <script src='http://codeorigin.jquery.com/jquery-2.0.3.min.js'></script>
+        <script src='sprintf.min.js'></script>
+        <script src="jquery.simplecolorpicker.js"></script>
+        <script src="jquery.editable.min.js"></script>
+        <script src="json2.js"></script>
+        <script src="keybind_training.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="jquery.simplecolorpicker.css"/>
+        <link rel="stylesheet" type="text/css" href="keybind_training.css"/>
+    </head>
+    <body>
+        <div id='div_benchmark'>
+            <div>
+                <input type='number' value='1' id='minutes' class='input_number'/>Minutes
+                <input type='submit' value='Start Benchmark' id='benchmark_btn' class='input_button'/>
+            </div>
+            <div id="stats">
+                <div>Accuracy</div>
+                <div>KP/M</div>
+                <div id="accuracy" class='stat_text'>&nbsp;</div>
+                <div id="kpm" class='stat_text'>&nbsp;</div>
+            </div>
+        </div>
+        <div id='div_capture'>
+            <input type='submit' value='Capture Key Presses' id='capture_btn' style="display: block; margin: 5px auto; width: 80%;" />
+            <table id='keys_table'>
+                <tr>
+                    <th style="width: 100px">Name</th>
+                    <th style="width: 70px;">Color</th>
+                </tr>
+            </table>
+            <input type='submit' value='Clear Keys' id='clear_btn' class='input_button' />
+        </div>
+        <div id="content">
+        </div>
+        <div id="key_name">
+        </div>
+        <select name="colorpicker" style="visibility: hidden; display:none;">
+            <option value="#f80c12">Red</option>
+            <option value="#ee1100">Red</option>
+            <option value="#ff3311">Red</option>
+            <option value="#ff4422">Red</option>
+            <option value="#ff6644">Pink</option>
+            <option value="#ff9933">Orange</option>
+            <option value="#feae2d">Orange</option>
+            <option value="#ccbb33">Puke</option>
+            <option value="#d0c310">Puke</option>
+            <option value="#aacc22">Green</option>
+            <option value="#69d025">Green</option>
+            <option value="#22ccaa">Blue</option>
+            <option value="#12bdb9">Blue</option>
+            <option value="#11aabb">Blue</option>
+            <option value="#4444dd">Blue</option>
+            <option value="#3311bb">Blue</option>
+            <option value="#3b0cbd">Blue</option>
+            <option value="#442299">Purple</option>
+        </select>
+        <div id='div_config'>
+            <div id="config">
+                <textarea id="export_txt"></textarea></br>
+                <input type='submit' value='Import Config' id='import_btn' />
+            </div> 
+            <input type='submit' value='Config Panel' id='config_btn' />
+        </div>
+        <div id='div_history'>
+            <div id="history">
+                <textarea id="benchmark_txt"></textarea></br>
+            </div> 
+            <input type='submit' value='Benchmark History' id='history_btn' />
+        </div>
+   </body>
+</html>
