@@ -19,4 +19,4 @@ Clicking "Start Benchmark" will present a 3 second countdown timer until the ben
 Why
 ===
 
-Getting use to awkward gaming keyboards can be frustrating. This application allows a user to configure keybindings which represent the keys they wish to practise at a high and constant rate as a form of practice, but also to build muscle memory.
+Getting use to awkward gaming keyboards can be frustrating. This application allows a user to configure keybindings which represent the keys they wish to practice at a high and constant rate as a form of practice, but also to build muscle memory.
